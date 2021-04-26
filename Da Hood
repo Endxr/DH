@@ -1,1 +1,53 @@
-print("2")
+-- Gui by End#6666 on discord
+-- Make sure to subscribe to ZenPlays on YouTube for amazing Music Content!
+-- Version: 1
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local AutorobDH = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 124, 124)
+main.Position = UDim2.new(0.678685963, 0, 0.359550655, 0)
+main.Size = UDim2.new(0, 351, 0, 358)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(74, 213, 255)
+label.BorderColor3 = Color3.fromRGB(100, 100, 100)
+label.Size = UDim2.new(0, 351, 0, 50)
+label.Font = Enum.Font.SourceSans
+label.Text = "Da Hood Autorob BETA"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextSize = 14.000
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(14, 243, 255)
+TextLabel.Position = UDim2.new(0, 0, 0.930167615, 0)
+TextLabel.Size = UDim2.new(0, 351, 0, 25)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Made By End#6666 "
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+AutorobDH.Name = "AutorobDH"
+AutorobDH.Parent = main
+AutorobDH.BackgroundColor3 = Color3.fromRGB(35, 35, 255)
+AutorobDH.Position = UDim2.new(0, 0, 0.139664799, 0)
+AutorobDH.Size = UDim2.new(0, 351, 0, 162)
+AutorobDH.Font = Enum.Font.Nunito
+AutorobDH.Text = "Autorob Da Hood"
+AutorobDH.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutorobDH.TextSize = 40.000
+AutorobDH.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/rapnz/scripts/master/DaHoodFarm.lua"))()
+end)
